@@ -1,0 +1,24 @@
+{
+  "name": "multi-stage-deps",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "../node_modules/nodemon/bin/nodemon.js ./bin/www --inspect=0.0.0.0:9229"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cookie-parser": "~1.4.7",
+    "debug": "^4.1.0",
+    "express": "^4.21.1",
+    "hbs": "^4.1.0",
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "mocha": "^9.2.2",
+    "nodemon": "^2.0.20"
+  }
+}

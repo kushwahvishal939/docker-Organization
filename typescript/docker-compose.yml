@@ -1,0 +1,14 @@
+# version: '2.4'
+# versions no longer needed in docker compose as of 2020
+# all features are included from 2.x and 3.x versions
+
+services:
+  ts:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "3000:3000"
+      - "9229:9229"
+    volumes:
+      - .:/app
